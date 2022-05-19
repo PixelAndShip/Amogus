@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Gaming</title>
+</head>
+<style>
+  body {background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;}
+</style>
+
+<body background="C:\Users\Skolnieks\Documents\David sussy codes\html and stuff\E_cxow9XoAQCZHu.jpg">
+<style>
+  body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+      }
+      
+      div{
+    
+    text-align: center;
+    color: aqua;
+    width: 200px;
+    height: 100px;
+    background-image: "C:\Users\Skolnieks\Documents\David sussy codes\html and stuff\lejupielāde.jpg";
+}
+</style>
+    <h1> This is my first Web Aplication</h1>
+    
+
+    <img src="C:\Users\Skolnieks\Documents\David sussy codes\html and stuff\maxresdefault.jpg" alt="Baba" width="1000" height="100">
+    <h2>This is not a drill</h2>
+    
+    </div>
+    <input type="text" name="number1" id="FirstNumber" /> 
+    <input type="text" name="number2" id="SecondNumber" /> 
+    <input type="text" name="operator" id="Operation"> 
+    <input type="text" id="CalculateSum" readonly="readonly" />
+    <input type="button" value="Calculate" onclick="calculate()" />
+    <h4 id="DarkModetext">Dark Mode is OFF</h4>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <button onclick="changeBackground()">Change background</button>
+ 
+     
+    <script>
+       function darkMode() {
+         var element = document.body;
+         var content = document.getElementById("DarkModetext");
+         element.className = "dark-mode";
+         content.innerText = "Dark Mode is OFF";
+       }
+       function lightMode() {
+         var element = document.body;
+         var content = document.getElementById("DarkModetext");
+         element.className = "light-mode";
+         content.innerText = "Dark Mode is ON";
+       }
+       function changeBackground() {
+         if(document.getElementById("myDIV").style.backgroundImage == "C:\Users\Skolnieks\Documents\David sussy codes\html and stuff\maxresdefault.jpg"){
+   document.getElementById("myDIV").style.backgroundImage = "C:\Users\Skolnieks\Documents\David sussy codes\html and stuff\E_cxow9XoAQCZHu.jpg";}
+  }if(document.getElementById("myDIV").style.backgroundImage == "C:\Users\Skolnieks\Documents\David sussy codes\html and stuff\E_cxow9XoAQCZHu.jpg"){
+   document.getElementById("myDIV").style.backgroundImage = "C:\Users\Skolnieks\Documents\David sussy codes\html and stuff\maxresdefault.jpg";}
+   
+   function calculate(){
+    value = ""
+    let skaitlis1 = document.getElementById('FirstNumber').value;
+    let skaitlis2 = document.getElementById('SecondNumber').value;
+    let operation = document.getElementById("Operation").value;
+    skaitlis1 = parseFloat(skaitlis1)
+    skaitlis2 = parseFloat(skaitlis2)
+    if (operation === "+"){
+        value = skaitlis1 + skaitlis2
+    }
+    else if (operation === "-"){
+        value = skaitlis1 - skaitlis2
+    }
+    else if (operation === "/"){
+        value = skaitlis1 / skaitlis2
+    }
+    else if (operation === "*"){
+        value = skaitlis1 * skaitlis2
+    }
+    else {
+        alert("Nepareizs formāts!")
+    }
+    if (value != ""){
+        alert("Atbilde ir " + value)
+    }
+}
+
+
+
+</script>
+<div>
+  <p>
+   
+
+   
+ Learning Box Model
+  </p>
+</div>
+</h3>
+</body>
+</html>
